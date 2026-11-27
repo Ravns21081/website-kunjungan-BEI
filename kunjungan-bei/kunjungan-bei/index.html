@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kunjungan Industri ke Bursa Efek Indonesia</title>
+<meta name="description" content="Dokumentasi dan penjelasan kunjungan industri ke Bursa Efek Indonesia (IDX).">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<!-- NAVBAR -->
+<header class="nav" id="nav">
+  <a href="#beranda" class="brand"><span class="brand-mark">▲</span> Kunjungan <b>BEI</b></a>
+  <button class="burger" id="burger" aria-label="Menu">☰</button>
+  <nav id="menu">
+    <a href="#tentang">Tentang BEI</a>
+    <a href="#sejarah">Sejarah</a>
+    <a href="#peran">Peran</a>
+    <a href="#kunjungan">Kunjungan</a>
+    <a href="#galeri">Galeri</a>
+    <a href="#kesimpulan">Kesimpulan</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="beranda">
+  <div class="hero-bg" id="heroBg"></div>
+  <canvas id="chart"></canvas>
+  <div class="hero-overlay"></div>
+  <div class="hero-inner">
+    <p class="eyebrow reveal">Laporan Kunjungan Industri</p>
+    <h1 class="reveal"><span data-cfg="judulBaris1">Bursa Efek</span><br><em data-cfg="judulBaris2">Indonesia</em></h1>
+    <p class="lead reveal" data-cfg="subjudul"></p>
+    <div class="meta reveal">
+      <span>📅 <span data-cfg="tanggal"></span></span>
+      <span>🏫 <span data-cfg="instansi"></span></span>
+      <span>📍 <span data-cfg="lokasi"></span></span>
+    </div>
+    <div class="cta reveal">
+      <a class="btn primary" href="#galeri">Lihat Galeri</a>
+      <a class="btn ghost" href="#tentang">Pelajari BEI</a>
+    </div>
+  </div>
+  <div class="scroll-hint">scroll ↓</div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track" id="ticker"></div>
+</div>
+<p class="ticker-note">*Tampilan berjalan di atas hanya ilustrasi, bukan harga saham sebenarnya.</p>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="stat reveal"><b class="count" data-to="1912">0</b><span>Tahun pasar modal pertama berdiri di Batavia</span></div>
+  <div class="stat reveal"><b class="count" data-to="2007">0</b><span>BEJ dan BES bergabung menjadi BEI</span></div>
+  <div class="stat reveal"><b class="count" data-to="900" data-suffix="+">0</b><span>Perusahaan tercatat (perkiraan)</span></div>
+  <div class="stat reveal"><b class="count" data-to="100">0</b><span>Lembar saham = 1 lot</span></div>
+</section>
+
+<!-- TENTANG -->
+<section class="sec" id="tentang">
+  <div class="wrap">
+    <p class="eyebrow reveal">Tentang</p>
+    <h2 class="reveal">Apa itu Bursa Efek Indonesia?</h2>
+    <div class="two">
+      <div class="reveal">
+        <p>Bursa Efek Indonesia (BEI) atau <i>Indonesia Stock Exchange</i> (IDX) adalah penyelenggara pasar yang menyediakan sistem dan sarana untuk mempertemukan penawaran jual dan beli efek. Efek yang diperdagangkan mencakup saham, obligasi, reksa dana yang diperdagangkan di bursa (ETF), waran, dan produk turunan.</p>
+        <p>Bursa ini berkantor pusat di Gedung Bursa Efek Indonesia, kawasan SCBD, Jalan Jenderal Sudirman, Jakarta Selatan. BEI berada di bawah pengawasan Otoritas Jasa Keuangan (OJK) dan bekerja bersama lembaga penunjang seperti KPEI dan KSEI.</p>
+        <p>Bagi peserta kunjungan industri, BEI adalah tempat melihat langsung bagaimana pasar modal bekerja: dari perusahaan yang mencari pendanaan, investor yang menanam modal, sampai sistem yang mencatat setiap transaksi.</p>
+      </div>
+      <div class="cards">
+        <div class="card tilt reveal"><h3>🏛️ Visi</h3><p>Menjadi bursa yang kompetitif dengan kredibilitas tingkat dunia.</p></div>
+        <div class="card tilt reveal"><h3>🎯 Misi</h3><p>Menciptakan infrastruktur pasar modal yang menyediakan produk dan layanan investasi yang efisien, wajar, dan transparan.</p></div>
+        <div class="card tilt reveal"><h3>🤝 Lembaga Terkait</h3><p><b>OJK</b> sebagai pengawas, <b>KPEI</b> untuk kliring dan penjaminan, <b>KSEI</b> untuk penyimpanan dan penyelesaian.</p></div>
+        <div class="card tilt reveal"><h3>📈 Indeks Utama</h3><p><b>IHSG</b> (indeks gabungan), <b>LQ45</b>, <b>IDX30</b>, dan <b>Kompas100</b>.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SEJARAH -->
+<section class="sec alt" id="sejarah">
+  <div class="wrap">
+    <p class="eyebrow reveal">Perjalanan</p>
+    <h2 class="reveal">Sejarah Singkat</h2>
+    <div class="timeline">
+      <div class="tl reveal"><time>1912</time><div><h3>Bursa pertama di Batavia</h3><p>Pemerintah kolonial Belanda mendirikan bursa efek di Batavia untuk kepentingan perusahaan Belanda di Hindia Belanda.</p></div></div>
+      <div class="tl reveal"><time>1914–1942</time><div><h3>Terhenti dan beroperasi lagi</h3><p>Aktivitas bursa sempat ditutup karena Perang Dunia dan situasi politik, lalu terhenti pada masa pendudukan Jepang.</p></div></div>
+      <div class="tl reveal"><time>1977</time><div><h3>Pasar modal diaktifkan kembali</h3><p>Bursa dibuka kembali di bawah Badan Pelaksana Pasar Modal (Bapepam). Perdagangan perlahan tumbuh.</p></div></div>
+      <div class="tl reveal"><time>1992</time><div><h3>Swastanisasi</h3><p>Bursa Efek Jakarta (BEJ) diswastakan sehingga pelaku pasar ikut mengelola bursa. Bursa Efek Surabaya (BES) juga berjalan sebagai bursa lain.</p></div></div>
+      <div class="tl reveal"><time>1995</time><div><h3>Perdagangan otomatis</h3><p>BEJ memakai sistem perdagangan otomatis JATS sehingga transaksi lebih cepat dan transparan.</p></div></div>
+      <div class="tl reveal"><time>2007</time><div><h3>Lahirnya BEI</h3><p>BEJ dan BES bergabung menjadi Bursa Efek Indonesia pada 1 Desember 2007.</p></div></div>
+      <div class="tl reveal"><time>Kini</time><div><h3>Pasar modal digital</h3><p>Investor bisa bertransaksi lewat aplikasi di ponsel, dan jumlah investor ritel terus bertambah.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PERAN -->
+<section class="sec" id="peran">
+  <div class="wrap">
+    <p class="eyebrow reveal">Fungsi</p>
+    <h2 class="reveal">Peran Bursa Efek</h2>
+    <div class="tabs reveal">
+      <div class="tab-btns" id="tabBtns">
+        <button class="on" data-tab="0">Pendanaan</button>
+        <button data-tab="1">Investasi</button>
+        <button data-tab="2">Perdagangan</button>
+        <button data-tab="3">Perlindungan</button>
+      </div>
+      <div class="tab-body" id="tabBody">
+        <div class="pane on"><h3>Sarana pendanaan bagi perusahaan</h3><p>Perusahaan yang ingin berkembang dapat menjual sahamnya kepada publik lewat penawaran umum perdana (IPO) atau menerbitkan obligasi. Dana yang terkumpul dipakai untuk ekspansi, riset, atau membayar utang. Setelah tercatat, perusahaan menjadi perusahaan terbuka yang wajib menyampaikan laporan keuangan secara berkala.</p></div>
+        <div class="pane"><h3>Sarana investasi bagi masyarakat</h3><p>Masyarakat dapat memiliki sebagian perusahaan dengan membeli saham, atau memberi pinjaman lewat obligasi. Keuntungan bisa datang dari kenaikan harga dan dividen, tetapi risiko kerugian juga ada. Karena itu, memahami perusahaan dan risikonya sebelum berinvestasi itu penting.</p></div>
+        <div class="pane"><h3>Mempertemukan penjual dan pembeli</h3><p>Order dari investor diteruskan lewat perusahaan efek (broker) ke sistem perdagangan bursa. Order dengan harga yang cocok akan menjadi transaksi. Harga terbentuk dari penawaran dan permintaan yang berlangsung terus selama jam bursa. Satuan perdagangan saham adalah lot, dengan 1 lot sama dengan 100 lembar.</p></div>
+        <div class="pane"><h3>Menjaga pasar tetap wajar dan teratur</h3><p>BEI memantau perdagangan untuk mencegah praktik yang merugikan, seperti manipulasi harga. Ada aturan batas kenaikan dan penurunan harga harian (auto rejection), serta mekanisme penghentian sementara perdagangan. Pengawasan tertinggi dilakukan oleh OJK.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KUNJUNGAN -->
+<section class="sec alt" id="kunjungan">
+  <div class="wrap">
+    <p class="eyebrow reveal">Kegiatan</p>
+    <h2 class="reveal">Rangkaian Kunjungan Industri</h2>
+    <p class="sub reveal">Urutan di bawah adalah gambaran umum kunjungan ke BEI. Sesuaikan isinya dengan kegiatan Anda di bagian <code>index.html</code>.</p>
+    <div class="steps">
+      <div class="step reveal"><span>01</span><h3>Registrasi &amp; Pengarahan</h3><p>Peserta mendaftar, menerima penjelasan tata tertib, lalu diarahkan ke ruang pertemuan.</p></div>
+      <div class="step reveal"><span>02</span><h3>Presentasi Pasar Modal</h3><p>Pihak BEI menjelaskan pengenalan pasar modal, produk investasi, cara membuka rekening efek, dan risiko investasi.</p></div>
+      <div class="step reveal"><span>03</span><h3>Melihat Ruang Perdagangan</h3><p>Peserta melihat layar pergerakan harga dan suasana pusat kegiatan pasar saham.</p></div>
+      <div class="step reveal"><span>04</span><h3>Galeri &amp; Tanya Jawab</h3><p>Peserta mengunjungi area edukasi dan bertanya langsung kepada narasumber.</p></div>
+      <div class="step reveal"><span>05</span><h3>Foto Bersama</h3><p>Kegiatan ditutup dengan sesi dokumentasi bersama.</p></div>
+    </div>
+    <div class="learn reveal">
+      <h3>Yang Dapat Dipelajari dari Kunjungan</h3>
+      <ul>
+        <li>Alur sebuah perusahaan menjadi perusahaan terbuka (IPO).</li>
+        <li>Cara kerja jual-beli saham, dari order investor sampai transaksi tercatat.</li>
+        <li>Peran OJK, KPEI, dan KSEI dalam menjaga keamanan transaksi.</li>
+        <li>Pentingnya literasi keuangan dan investasi sesuai profil risiko.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- GALERI -->
+<section class="sec" id="galeri">
+  <div class="wrap">
+    <p class="eyebrow reveal">Dokumentasi</p>
+    <h2 class="reveal">Galeri Kunjungan</h2>
+    <div class="gal-tools reveal">
+      <button class="btn small" id="editToggle">✎ Mode Ganti Foto</button>
+      <button class="btn small ghost" id="resetPhotos" hidden>↺ Kembalikan ke foto awal</button>
+      <span class="hint" id="editHint" hidden>Klik tombol “Ganti” pada foto, pilih gambar dari perangkat. Perubahan tersimpan di browser ini saja. Untuk permanen, letakkan file di folder <code>images/</code>.</span>
+    </div>
+    <div class="gallery" id="gallery"></div>
+  </div>
+</section>
+
+<!-- KESIMPULAN -->
+<section class="sec alt" id="kesimpulan">
+  <div class="wrap narrow">
+    <p class="eyebrow reveal">Penutup</p>
+    <h2 class="reveal">Kesimpulan</h2>
+    <p class="reveal">Kunjungan ke Bursa Efek Indonesia memberi gambaran nyata bahwa pasar modal adalah penghubung antara perusahaan yang membutuhkan dana dan masyarakat yang ingin berinvestasi. Pasar yang teratur, wajar, dan transparan hanya bisa berjalan bila ada aturan, pengawasan, dan peserta yang paham risiko.</p>
+    <p class="reveal">Pengalaman ini juga mendorong kita untuk memulai dari pengetahuan: mengenal produk, menilai risiko, dan berinvestasi dengan dana yang sesuai kemampuan.</p>
+    <blockquote class="reveal" data-cfg="kutipan"></blockquote>
+  </div>
+</section>
+
+<footer class="foot">
+  <p>© <span id="year"></span> <span data-cfg="instansi"></span> · Laporan Kunjungan Industri ke Bursa Efek Indonesia</p>
+  <p class="small">Situs ini dibuat untuk keperluan dokumentasi pendidikan dan tidak berafiliasi resmi dengan Bursa Efek Indonesia. Informasi bersifat umum dan bukan ajakan membeli atau menjual efek.</p>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lb" hidden>
+  <button class="lb-x" id="lbClose" aria-label="Tutup">✕</button>
+  <button class="lb-nav prev" id="lbPrev" aria-label="Sebelumnya">‹</button>
+  <figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+  <button class="lb-nav next" id="lbNext" aria-label="Berikutnya">›</button>
+</div>
+
+<input type="file" id="filePick" accept="image/*" hidden>
+<script src="script.js"></script>
+</body>
+</html>
